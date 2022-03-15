@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>botones</title>
+</head>
+<style>
+
+/*dispositivos muy pequenos*/
+@media only screen and (min-width: 600px){
+    
+    .col-s-1{width: 8.33%}
+    .col-s-2{width: 16.66%}
+    .col-s-3{width: 25%}
+    .col-s-4{width: 33.33%}
+    .col-s-5{width: 41.66%}
+    .col-s-6{width: 50%}
+    .col-s-7{width: 58.33%}
+    .col-s-8{width: 66.66%}
+    .col-s-9{width: 75%}
+    .col-s-10{width: 83.33%}
+    .col-s-11{width: 91.66%}
+    .col-s-12{width: 100%}   
+}
+/*dispositivos tamano medio*/
+@media only screen and (min-width: 768px){
+    .estilo{
+    background-color: rgb(51, 88, 88);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    float: left;
+}
+
+    .col-m-1{width: 8.33%}
+    .col-m-2{width: 16.66%}
+    .col-m-3{width: 25%}
+    .col-m-4{width: 33.33%}
+    .col-m-5{width: 41.66%}
+    .col-m-6{width: 50%}
+    .col-m-7{width: 58.33%}
+    .col-m-8{width: 66.66%}
+    .col-m-9{width: 75%}
+    .col-m-10{width: 83.33%}
+    .col-m-11{width: 91.66%}
+    .col-m-12{width: 100%}  
+}
+/*dispositivos grandes*/
+@media only screen and (min-width: 992px){
+    .estilo{
+        background-color: rgb(166, 52, 211);
+         color: white;
+         font-family:cursive;
+        
+}
+
+    .col-1{width: 8.33%}
+    .col-2{width: 16.66%}
+    .col-3{width: 25%}
+    .col-4{width: 33.33%}
+    .col-5{width: 41.66%}
+    .col-6{width: 50%}
+    .col-7{width: 58.33%}
+    .col-8{width: 66.66%}
+    .col-9{width: 75%}
+    .col-10{width: 83.33%}
+    .col-11{width: 91.66%}
+    .col-12{width: 100%}  
+}
+    *{
+          box-sizing: border-box;
+    }
+    body{
+        color: azure;
+        margin: 0;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .header{
+        background-color: steelblue;
+        width: 950px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+
+          border:solid 2px black;
+
+         position: relative;
+         top: 30px;
+
+      
+       border-radius: 5px;
+       box-shadow: inset 0px -10px 20px 0px aqua;
+      
+
+    }
+
+    .main{
+        background-color: yellowgreen;
+        width: 60%;
+        height: 300px;
+        margin-left: 30px;
+        border:solid 2px black;
+
+        position: relative;
+        top: 45px;
+       
+        border-radius: 5px;
+        box-shadow: inset 0px -10px 20px 0px green;
+    }
+
+    .asidebar{
+        background-color: tomato;
+        width: 30%;
+        height: 300px;
+        border:solid 2px black;
+        border-radius: 5px;
+        box-shadow: inset 0px -10px 20px 0px red;
+
+        margin-left: 680px;
+
+        position: relative;
+        top: -254px;
+
+    }
+
+    .footer{
+        background-color: blue;
+        width: 950px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        border:solid 2px black;
+
+
+        position:relative;
+        bottom: 238px;
+        border-radius: 5px;
+        box-shadow: inset 0px -10px 20px 0px aqua;
+    }
+
+
+    .item{
+        background-color: green;
+        width: 120px;
+        height: 70px;
+        border:solid 2px black;
+        margin-left: 20px;
+        display: flex;
+           text-align: center;
+
+        display: inline-block;
+        margin-block: 10px;
+
+       
+
+        border-radius: 5px;
+
+        box-shadow: inset 0px -10px 20px 0px blanchedalmond;
+        cursor: pointer;
+        
+        position: relative;
+        border: .3rem;
+        overflow: hidden;
+    }
+
+    .item:hover{
+        color: white;
+        background-color: black;
+    }
+
+    .item:active{
+
+        background-color: red;
+    }
+
+    .grouop{
+        display: table-column;
+        margin-left: auto;
+        margin-right: auto;
+       
+
+    }
+
+</style>
+<body>
+    <header class="header">HEADER</header>
+
+    <main class="main">MAIN
+        <div class="group">
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+            <div class="item"><p>item </p></div>
+        </div>
+    </main>
+
+    <aside class="asidebar">ASIDEBAR</aside>
+
+    <footer class="footer">FOOTER</footer>
+</body>
+</html>
